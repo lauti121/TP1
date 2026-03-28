@@ -91,9 +91,30 @@ def reportes_de_ciudades(ciudades):
     print("Reportes de Ciudades")
     for ciudad_dict in ciudades:
         nombre = ciudad_dict["ciudad"]
-        temps = ciudad_dict["temperatura"]
+        temps = ciudad_dict["temperaturas"]
         prom = calcular_prom(temps)
         minimo = calcular_min(temps)
         maximo = calcular_max(temps)
         print(f"Ciudad: {nombre} | Promedio: {prom: .2f}°C | Min: {minimo}°C | Max: {maximo}°C")
+
+calcular_suma(datos)
+calcular_larg(datos)
+calcular_prom(datos)
+calcular_min(datos)
+calcular_max(datos)
+dubble_sort(datos)
+calcular_mediana(datos)
+calcular_desv_estandar(datos)
+C_A_F(grados_C)
+
+print("Suma:", calcular_suma(datos))
+print("Largo:", calcular_larg(datos))
+print("Promedio:", calcular_prom(datos))
+print("Mínimo:", calcular_min(datos))
+print("Máximo:", calcular_max(datos))
+print("Mediana:", calcular_mediana(datos))
+print("Desviación Estándar:", calcular_desv_estandar(datos))
+print("Grados Fahrenheit:", C_A_F(grados_C))
+
+reportes_de_ciudades(ciudades)
 
